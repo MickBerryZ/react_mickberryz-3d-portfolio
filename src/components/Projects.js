@@ -15,32 +15,33 @@ export const Projects = () => {
 
     const projects = [
         {
-            title: "Business Startup",
+            title: "MickBerryZ Shop",
             description: "Design & Development",
             imgUrl: bowser001,
+            projectUrl: "https://mickberryz-ecom-temu-next15-sanity-stripe-2025-03-08.vercel.app/",
         },
         {
-            title: "Business Startup",
+            title: "Business Startup2",
             description: "Design & Development",
             imgUrl: bowser002,
         },
         {
-            title: "Business Startup",
+            title: "Business Startup3",
             description: "Design & Development",
             imgUrl: bowser003,
         },
         {
-            title: "Business Startup",
+            title: "Business Startup4",
             description: "Design & Development",
             imgUrl: bowser004,
         },
         {
-            title: "Business Startup",
+            title: "Business Startup5",
             description: "Design & Development",
             imgUrl: bowser005,
         },
         {
-            title: "Business Startup",
+            title: "Business Startup6",
             description: "Design & Development",
             imgUrl: bowser006,
         },
