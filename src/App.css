@@ -475,6 +475,29 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: #222;
 }
 
+/* The hover image sits directly on top of Bowser, but is invisible (opacity: 0) */
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+  z-index: 1;
+}
+
+/* When the mouse hovers over the card, make the new image visible */
+.proj-imgbx:hover .img-hover {
+  opacity: 1;
+}
+
+/* Keep your text overlay above BOTH images */
+.proj-txtx {
+  z-index: 10; 
+}
+
 .proj-imgbx img {
   width: 100%;
   height: 100%;
@@ -487,14 +510,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  opacity: 0.85;
+  opacity: 0;
   position: absolute;
   width: 100%;
-  height: 0;
+  height: 100%;
   transition: 0.4s ease-in-out;
+  z-index: 5;
 }
+
 .proj-imgbx:hover::before {
   height: 100%;
+  opacity: 0.70;
 }
 
 .proj-imgbx:hover img {
@@ -510,7 +536,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -521,12 +547,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1.1em;
+
+  text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+  color: #fff;
 }
 .proj-txtx span {
   font-style: italic;
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+
+  text-shadow: 4px 4px 5px rgba(0,0,0,0.8);
 }
 .background-image-right {
   top: 20%;

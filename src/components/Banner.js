@@ -9,7 +9,7 @@ import TrackVisibility from "react-on-screen"
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Awesome.....", "Make a Wish", "Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["Software Developer", "IT Support"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -52,8 +52,8 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animated__animated animate__fadeIn" : ""} >
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{"Hi I'm Mick "}<span className="wrap">{text}</span></h1>
-                                    <p>Lorem Ipsum is simply dummy text of printing and typesetting industry. Loren Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <h1>{"Hi I'm Mickey "}<span className="wrap">{text}</span></h1>
+                                    <p>Software Developer and IT Support professional experienced in building scalable web applications using React, Next.js, Laravel, WordPress and ASP.NET Core. Skilled in leading development projects, integrating APIs, automating workflows, and delivering high-quality user-focused solutions. Experienced in collaborating with cross-functional teams and managing stakeholders to drive project success and improve system efficiency.</p>
                                     <button onClick={() => console.log("connect")} >
                                         Let's connect<ArrowRightCircle size={25} />
                                     </button>

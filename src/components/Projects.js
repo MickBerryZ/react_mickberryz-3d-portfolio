@@ -11,19 +11,26 @@ import bowser006 from "../assets/img/bowser006.png"
 import "animate.css"
 import TrackVisibility from "react-on-screen"
 
+import myTemuImg from "../assets/img/temu.png";
+import eCommerceBlackfriday from "../assets/img/e-commerce-blackfriday.png";
+
 export const Projects = () => {
 
     const projects = [
         {
-            title: "MickBerryZ Shop",
-            description: "Design & Development",
-            imgUrl: bowser001,
+            title: "MickBerryZ Shop(Temu)",
+            description: "Next.js 15 + Sanity + Stripe",
+            imgUrl: myTemuImg,
+            hoverImgUrl: bowser001,
             projectUrl: "https://mickberryz-ecom-temu-next15-sanity-stripe-2025-03-08.vercel.app/",
         },
         {
-            title: "Business Startup2",
-            description: "Design & Development",
-            imgUrl: bowser002,
+            title: "MickBerryZ Black Friday Sale",
+            description: "Next.js 15 + Sanity + Stripe clerk",
+            imgUrl: eCommerceBlackfriday,
+            hoverImgUrl: bowser002,
+            projectUrl: "https://mickberryz-ecom-next15-sanity-stripe-clerk-2024-12-08.vercel.app/",
+
         },
         {
             title: "Business Startup3",
