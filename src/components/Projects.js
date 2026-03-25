@@ -18,24 +18,26 @@ export const Projects = () => {
 
     const projects = [
         {
-            title: "MickBerryZ Shop(Temu)",
-            description: "Next.js 15 + Sanity + Stripe",
+            title: "MickBerryZ Shop(Temu Clone)",
+            description: "Built a full-stack storefront with a Zustand-Prisma synced cart, Stripe webhooks, gamified UI, and Umami analytics.",
             imgUrl: myTemuImg,
             hoverImgUrl: bowser001,
             projectUrl: "https://mickberryz-ecom-temu-next15-sanity-stripe-2025-03-08.vercel.app/",
         },
         {
-            title: "MickBerryZ Black Friday Sale",
-            description: "Next.js 15 + Sanity + Stripe clerk",
+            title: "E-Commerce Platform",
+            description: "Built with Next.js 15, integrated with Sanity CMS for content management, Stripe for payment processing, and Clerk for authentication.",
             imgUrl: eCommerceBlackfriday,
             hoverImgUrl: bowser002,
             projectUrl: "https://mickberryz-ecom-next15-sanity-stripe-clerk-2024-12-08.vercel.app/",
 
         },
         {
-            title: "Business Startup3",
-            description: "Design & Development",
+            title: "Real Estate Platform",
+            description: "Developed using MERN Stack (MongoDB, Express.js, React, Node.js) with user authentication, interactive maps, and property listings.",
             imgUrl: bowser003,
+            hoverImgUrl: bowser003,
+            projectUrl: "https://mickberryz-mern-estate-v2024-06-22.onrender.com/",
         },
         {
             title: "Business Startup4",
