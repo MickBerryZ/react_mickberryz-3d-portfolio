@@ -50,13 +50,16 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animated__animated animate__fadeIn" : ""} >
-                                    <span className="tagline">Welcome to my Portfolio</span>
+                                <div className={isVisible ? "animate__animated animate__fadeIn" : ""} >
+                                    <span className="tagline">Welcome to My Portfolio</span>
                                     <h1>{"Hi I'm Mickey "}<span className="wrap">{text}</span></h1>
                                     <p>Software Developer and IT professional experienced in building scalable web applications using React, Next.js, Laravel, WordPress and ASP.NET Core. Skilled in leading development projects, integrating APIs, automating workflows, and delivering high-quality user-focused solutions. Experienced in collaborating with cross-functional teams and managing stakeholders to drive project success and improve system efficiency.</p>
-                                    <button onClick={() => console.log("connect")} >
-                                        Let's connect<ArrowRightCircle size={25} />
-                                    </button>
+                                    <a href="https://github.com/MickBerryZ" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                                        <button>
+                                            Let's connect <ArrowRightCircle size={25} />
+                                        </button>
+                                    </a>
+
                                 </div>}
                         </TrackVisibility>
                     </Col>

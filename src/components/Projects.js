@@ -13,6 +13,7 @@ import TrackVisibility from "react-on-screen"
 
 import myTemuImg from "../assets/img/temu.png";
 import eCommerceBlackfriday from "../assets/img/e-commerce-blackfriday.png";
+import estate from "../assets/img/estate.png";
 
 export const Projects = () => {
 
@@ -35,9 +36,9 @@ export const Projects = () => {
         {
             title: "Real Estate Platform",
             description: "Developed using MERN Stack (MongoDB, Express.js, React, Node.js) with user authentication, interactive maps, and property listings.",
-            imgUrl: bowser003,
+            imgUrl: estate,
             hoverImgUrl: bowser003,
-            projectUrl: "https://mickberryz-mern-estate-v2024-06-22.onrender.com/",
+            projectUrl: "https://mickberryz-mern-estate-v2024-06-22.vercel.app/",
         },
         {
             title: "Business Startup4",
