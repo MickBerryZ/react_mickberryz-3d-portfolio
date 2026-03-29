@@ -1,35 +1,30 @@
-import { useState, useEffect } from "react"
-import { Col, Container, Row } from "react-bootstrap"
-import { ArrowRightCircle } from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.svg"
-import "animate.css"
-import TrackVisibility from "react-on-screen"
-// import { isVisible } from "@testing-library/user-event/dist/utils"
+import { useState, useEffect, useCallback } from "react";
+import { Col, Container, Row } from "react-bootstrap";
+import { ArrowRightCircle } from "react-bootstrap-icons";
+import headerImg from "../assets/img/header-img.svg";
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+
+const TO_ROTATE = ["Software Developer", "IT Support"];
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Developer", "IT Support"];
     const [text, setText] = useState("");
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
 
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        }, delta)
-        return () => { clearInterval(ticker) }
-    }, [text])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+    const tick = useCallback(() => {
+        let i = loopNum % TO_ROTATE.length;
+        let fullText = TO_ROTATE[i];
+        let updatedText = isDeleting
+            ? fullText.substring(0, text.length - 1)
+            : fullText.substring(0, text.length + 1);
 
         setText(updatedText);
 
         if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2)
+            setDelta(prevDelta => prevDelta / 2);
         }
 
         if (!isDeleting && updatedText === fullText) {
@@ -40,8 +35,17 @@ export const Banner = () => {
             setLoopNum(loopNum + 1);
             setDelta(500);
         }
+    }, [isDeleting, loopNum, text.length]);
 
-    }
+
+    useEffect(() => {
+        let ticker = setInterval(() => {
+            tick();
+        }, delta)
+        return () => { clearInterval(ticker) }
+    }, [delta, tick])
+
+
 
     return (
         <section className="flex flex-col gap-4 banner" id="home">
@@ -52,8 +56,9 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""} >
                                     <span className="tagline">Welcome to My Portfolio</span>
-                                    <h1>{"Hi I'm Mickey "}<span className="wrap">{text}</span></h1>
-                                    <p>Software Developer and IT professional experienced in building scalable web applications using React, Next.js, Laravel, WordPress and ASP.NET Core. Skilled in leading development projects, integrating APIs, automating workflows, and delivering high-quality user-focused solutions. Experienced in collaborating with cross-functional teams and managing stakeholders to drive project success and improve system efficiency.</p>
+                                    <h2>{"Hi I'm Mickey "}</h2>
+                                    <h3 className="wrap">{text}</h3>
+                                    <p className="text-start">Software Developer and IT professional experienced in building scalable web applications using React, Next.js, Laravel, WordPress and ASP.NET Core. Skilled in leading development projects, integrating APIs, automating workflows, and delivering high-quality user-focused solutions. Experienced in collaborating with cross-functional teams and managing stakeholders to drive project success and improve system efficiency.</p>
                                     <a href="https://github.com/MickBerryZ" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
                                         <button>
                                             Let's connect <ArrowRightCircle size={25} />

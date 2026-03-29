@@ -66,7 +66,7 @@ export const Projects = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__bounce" : ""} >
                                     <h2>Projects</h2>
-                                    <p>My journey through full-stack development, showcasing robust e-commerce solutions, dynamic marketplaces, and interactive user interfaces. Each project reflects a commitment to clean code, scalability, and delivering a seamless user experience using modern frameworks.</p>
+                                    <p className="text-start">My journey through full-stack development, showcasing robust e-commerce solutions, dynamic marketplaces, and interactive user interfaces. Each project reflects a commitment to clean code, scalability, and delivering a seamless user experience using modern frameworks.</p>
                                 </div>}
                         </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
