@@ -82,9 +82,12 @@ export const NavBar = () => {
                             <a href="https://www.instagram.com/mickberryz/"><img src={navIcon3} alt="/" /></a>
                             <a href="https://github.com/MickBerryZ"><img src={navIcon4} alt="/" /></a>
                         </div>
-                        <button className="vvd" onClick={() => console.log("connect")}>
-                            <span>Let's Connect</span>
-                        </button>
+
+                        <a href="https://github.com/MickBerryZ" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
+                            <button className="vvd" >
+                                <span>Let's Connect</span>
+                            </button>
+                        </a>
                     </span>
                 </Navbar.Collapse>
 

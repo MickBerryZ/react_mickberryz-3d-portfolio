@@ -40,21 +40,21 @@ export const Projects = () => {
             hoverImgUrl: bowser003,
             projectUrl: "https://mickberryz-mern-estate-v2024-06-22.vercel.app/",
         },
-        {
-            title: "Business Startup4",
-            description: "Design & Development",
-            imgUrl: bowser004,
-        },
-        {
-            title: "Business Startup5",
-            description: "Design & Development",
-            imgUrl: bowser005,
-        },
-        {
-            title: "Business Startup6",
-            description: "Design & Development",
-            imgUrl: bowser006,
-        },
+        // {
+        //     title: "Business Startup4",
+        //     description: "Design & Development",
+        //     imgUrl: bowser004,
+        // },
+        // {
+        //     title: "Business Startup5",
+        //     description: "Design & Development",
+        //     imgUrl: bowser005,
+        // },
+        // {
+        //     title: "Business Startup6",
+        //     description: "Design & Development",
+        //     imgUrl: bowser006,
+        // },
     ];
     return (
         <section className="project" id="projects">
@@ -64,9 +64,9 @@ export const Projects = () => {
                     <Col xs={12}>
                         <TrackVisibility>
                             {({ isVisible }) =>
-                                <div className={isVisible ? "animated__animated animate__bounce" : ""} >
+                                <div className={isVisible ? "animate__animated animate__bounce" : ""} >
                                     <h2>Projects</h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                    <p>My journey through full-stack development, showcasing robust e-commerce solutions, dynamic marketplaces, and interactive user interfaces. Each project reflects a commitment to clean code, scalability, and delivering a seamless user experience using modern frameworks.</p>
                                 </div>}
                         </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -77,12 +77,12 @@ export const Projects = () => {
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Tab One</Nav.Link>
                                 </Nav.Item>
-                                <Nav.Item>
+                                {/* <Nav.Item>
                                     <Nav.Link eventKey="second">Tab Two</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                                </Nav.Item>
+                                </Nav.Item> */}
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
@@ -99,8 +99,8 @@ export const Projects = () => {
                                         }
                                     </Row>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="second">Mickey</Tab.Pane>
-                                <Tab.Pane eventKey="third">Mickey</Tab.Pane>
+                                {/* <Tab.Pane eventKey="second">Mickey</Tab.Pane>
+                                <Tab.Pane eventKey="third">Mickey</Tab.Pane> */}
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
