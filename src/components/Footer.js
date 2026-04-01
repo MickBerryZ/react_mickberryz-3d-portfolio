@@ -18,10 +18,14 @@ export const Footer = () => {
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/thawatchai-sangthep/"><img src={navIcon1} /></a>
-                            <a href="https://www.facebook.com/mick.berryz/"><img src={navIcon2} /></a>
-                            <a href="https://www.instagram.com/mickberryz/"><img src={navIcon3} /></a>
-                            <a href="https://github.com/MickBerryZ"><img src={navIcon4} alt="/" /></a>
+                            <a href="https://www.linkedin.com/in/thawatchai-sangthep/"><img src={navIcon1} style={{
+                                width: "30px", height: "30px"
+                            }} /></a>
+                            {/* <a href="https://www.facebook.com/mick.berryz/"><img src={navIcon2} /></a>
+                            <a href="https://www.instagram.com/mickberryz/"><img src={navIcon3} /></a> */}
+                            <a href="https://github.com/MickBerryZ"><img src={navIcon4} alt="/" style={{
+                                width: "30px", height: "30px"
+                            }} /></a>
                         </div>
                         <p>CopyRight 2023. All Right Reserved </p>
                     </Col>

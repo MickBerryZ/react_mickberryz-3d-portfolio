@@ -53,34 +53,42 @@ export const NavBar = () => {
                         <Nav.Link
                             href="#home"
                             className={activeLink === "home" ? "active navbar-link" : "navbar-light"}
-                            onClick={() => onUpdateActiveLink("home")}>
+                            onClick={() => onUpdateActiveLink("home")}
+                            style={{ fontSize: "1.2rem" }}>
                             Home
                         </Nav.Link>
                         <Nav.Link
                             href="#projects"
                             className={activeLink === "projects" ? "active navbar-link" : "navbar-light"}
-                            onClick={() => onUpdateActiveLink("projects")}>
+                            onClick={() => onUpdateActiveLink("projects")}
+                            style={{ fontSize: "1.2rem" }}>
                             Projects
                         </Nav.Link>
                         {/* <Nav.Link
                             href="#skills"
                             className={activeLink === "skills" ? "active navbar-link" : "navbar-light"}
-                            onClick={() => onUpdateActiveLink("skills")}>
+                            onClick={() => onUpdateActiveLink("skills")}
+                            style={{ fontSize: "1.2rem" }}>
                             Skills
                         </Nav.Link> */}
                         <Nav.Link
                             href="#footer"
                             className={activeLink === "footer" ? "active navbar-link" : "navbar-light"}
-                            onClick={() => onUpdateActiveLink("footer")}>
+                            onClick={() => onUpdateActiveLink("footer")}
+                            style={{ fontSize: "1.2rem" }}>
                             Footer
                         </Nav.Link>
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="https://www.linkedin.com/in/thawatchai-sangthep/"><img src={navIcon1} alt="/" /></a>
-                            <a href="https://www.facebook.com/mick.berryz/"><img src={navIcon2} alt="/" /></a>
-                            <a href="https://www.instagram.com/mickberryz/"><img src={navIcon3} alt="/" /></a>
-                            <a href="https://github.com/MickBerryZ"><img src={navIcon4} alt="/" /></a>
+                            <a href="https://www.linkedin.com/in/thawatchai-sangthep/"><img src={navIcon1} alt="LinkedIn" style={{
+                                width: "30px", height: "30px"
+                            }} /></a>
+                            {/* <a href="https://www.facebook.com/mick.berryz/"><img src={navIcon2} alt="Facebook" /></a>
+                            <a href="https://www.instagram.com/mickberryz/"><img src={navIcon3} alt="Instagram" /></a> */}
+                            < a href="https://github.com/MickBerryZ" > <img src={navIcon4} alt="GitHub" style={{
+                                width: "30px", height: "30px"
+                            }} /></a>
                         </div>
 
                         <a href="https://github.com/MickBerryZ" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}>
