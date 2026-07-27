@@ -23,7 +23,7 @@ export const Projects = () => {
             description: "Built a full-stack storefront with a Zustand-Prisma synced cart, Stripe webhooks, gamified UI, and Umami analytics.",
             imgUrl: myTemuImg,
             hoverImgUrl: bowser001,
-            projectUrl: "https://mickberryz-ecom-temu-next15-sanity-stripe-2025-03-08.vercel.app/",
+            projectUrl: "https://mickberryz-ecom-next15-2025-03-08.vercel.app/",
         },
         {
             title: "E-Commerce Platform",
